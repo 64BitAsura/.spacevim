@@ -1,0 +1,140 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2022 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg@outlook.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "palenight"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    statusline_unicode_symbols = true
+    enable_statusline_mode = true
+    enable_vimfiler_gitstatus = true
+    bootstrap_before = 'myspacevim#before'
+    bootstrap_after = 'myspacevim#after'
+
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+name = 'edit'
+autosave_events = ['InsertLeave', 'TextChanged']
+autosave_all_buffers = true
+
+[[layers]]
+name = "gtags"
+gtagslable = "ctags"
+
+[[layers]]
+name = 'shell'
+default_position = 'bottom'
+default_height = 40
+default_shell = 'terminal'
+
+[[layers]]
+name = "lsp"
+
+[[layers]]
+name = 'lang#typescript'
+
+[[layers]]
+name = 'tmux'
+
+[[layers]]
+name = 'zettelkasten'
+
+[[layers]]
+name = 'telescope'
+
+[[layers]]
+name = 'treesitter'
+
+[[layers]]
+name = 'colorscheme'
+
+[[layers]]
+name = 'git'
+
+[[layers]]
+name = 'test'
+
+[[layers]]
+name = 'debug'
+
+#[[custom_plugins]]
+#repo = "KabbAmine/yowish.vim"
+#merged = 0
+
+[[custom_plugins]]
+repo = "liuchengxu/space-vim-dark"
+merged = 0
+
+[[custom_plugins]]
+repo = 'rest-nvim/rest.nvim'
+merged = 0
+
+[[custom_plugins]]
+repo = 'f-person/git-blame.nvim'
+merged = 0
+
+#[[custom_plugins]]
+#repo = 'rebelot/heirline.nvim'
+#merged = 0
+
+[[custom_plugins]]
+repo = "unkiwii/vim-nerdtree-sync"
+merged = 0
+
+[[custom_plugins]]
+repo = "mortonfox/nerdtree-clip"
+merged = 0
+
+[[custom_plugins]]
+repo = "ryanoasis/vim-devicons"
+merged = 0
+
+[[custom_plugins]]
+repo = "tiagofumo/vim-nerdtree-syntax-highlight"
+merged = 0
+
+#[[custom_plugins]]
+#repo = "folke/tokyonight.nvim"
+#merged = 0
+
+[[custom_plugins]]
+repo = "lewis6991/gitsigns.nvim"
+merged = 0
+
+[[custom_plugins]]
+repo = "lukas-reineke/indent-blankline.nvim"
+merged = 0
+
+[[custom_plugins]]
+repo = "akinsho/toggleterm.nvim"
+merged = 0
+
+[[custom_plugins]]
+repo = "sbdchd/neoformat"
+merged = 0
+
+[[custom_plugins]]
+repo = "rcarriga/nvim-notify"
+merged = 0
